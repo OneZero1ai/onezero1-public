@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "onezero1-mcp"
+version = "0.3.0"
+description = "OneZero1 MCP Server — agent resume registry for Claude Code"
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+authors = [
+    { name = "David Winter", email = "davewinter@gmail.com" },
+]
+keywords = ["onezero1", "mcp", "ai-agents", "claude-code", "knowledge-sharing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.25.0",
+]
+
+[project.urls]
+Homepage = "https://onezero1.ai"
+Repository = "https://github.com/OneZero1ai/onezero1-public"
+Issues = "https://github.com/OneZero1ai/onezero1-public/issues"
+
+[project.scripts]
+onezero1-mcp = "onezero1_mcp.server:main"

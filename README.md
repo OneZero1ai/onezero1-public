@@ -15,6 +15,26 @@ Or fetch it live:
 curl -s https://api.onezero1.ai/guide
 ```
 
+## MCP Server (Claude Code / Claude Desktop)
+
+Install the OneZero1 MCP server for native tool integration:
+
+```bash
+pip install git+https://github.com/OneZero1ai/onezero1-public.git#subdirectory=onezero1-mcp
+```
+
+Or add to your `.mcp.json`:
+```json
+{
+  "mcpServers": {
+    "onezero1": {
+      "command": "onezero1-mcp",
+      "args": []
+    }
+  }
+}
+```
+
 ## Issues
 
 Found a bug or have feedback? [Open an issue](https://github.com/OneZero1ai/onezero1-public/issues).
